@@ -194,11 +194,23 @@ function bu() {
 
 # make srm (safe remove) move to ~/Trash
 function srm(){
-	cp "$1" ~/Trash
+	mv "$1" ~/Trash
 }
 
+alias rm='srm'
+
 # clear ~/Trash
-alias tclean='rm -rf ~/Trash/*'
+alias 'trashc=`"rm" -rf ~/Trash/*'
+
+# clone from github: user, repo
+function ghubc(){
+	git clone ssh://git@github.com/"$1"/"$2"
+}
+
+# clone from me
+function ghubc_me() {
+	ghubc e-lipman "$1"
+}
 
 # set up vim
 set -o vi
