@@ -200,7 +200,7 @@ function srm(){
 alias rm='srm'
 
 # clear ~/Trash
-alias 'trashc=`"rm" -rf ~/Trash/*'
+alias trashc='\rm -rf ~/Trash/*'
 
 # delete all empty dirs
 alias rm_all_empty='find . -type d -empty -delete'
