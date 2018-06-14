@@ -202,6 +202,9 @@ alias rm='srm'
 # clear ~/Trash
 alias 'trashc=`"rm" -rf ~/Trash/*'
 
+# delete all empty dirs
+alias rm_all_empty='find . -type d -empty -delete'
+
 # clone from github: user, repo
 function ghubc(){
 	git clone ssh://git@github.com/"$1"/"$2"
