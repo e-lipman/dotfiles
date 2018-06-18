@@ -1,6 +1,20 @@
 " vi IMproved
 set nocompatible
 
+" plugin stuff
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/vim-easy-align'
+Plug 'justinmk/vim-sneak'
+
+call plug#end()
+
+" plugin config
+let g:sneak#label = 1
+let g:sneak#streak = 1
+nmap s <Plug>SneakLabel_s
+nmap S <Plug>SneakLabel_S
+
 " Backspace 
 set backspace=indent,eol,start 
 
@@ -37,3 +51,7 @@ nnoremap <silent> <C-l> : <C-u> nohlsearch <CR> <C-l>
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" stuff for plugins
+
+
