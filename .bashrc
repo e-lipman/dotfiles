@@ -173,14 +173,14 @@ function cv () {
 }
 
 # makes cc a smart cd
-function cc () {
-    if [[ -d "$1" ]]
-    then
-    cs "$1"
-    else
-    cv "$1"
-    fi
-    }
+# function cc () {
+#    if [[ -d "$1" ]]
+#    then
+#       cs "$1"
+#    else
+#       cv "$1"
+#    fi
+#    }
 
 # STUFF I ADDED
 
@@ -205,6 +205,11 @@ alias trashc='\rm -rf ~/Trash/*'
 # delete all empty dirs
 alias rm_all_empty='find . -type d -empty -delete'
 
+# jump
+alias j='xdir=$(fasd -dl | fzf --tac) && cd "$xdir"'
+eval "$(fasd --init auto)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # clone from github: user, repo
 function ghubc(){
 	git clone ssh://git@github.com/"$1"/"$2"
@@ -215,6 +220,9 @@ function ghubc_me() {
 	ghubc e-lipman "$1"
 }
 
+# snap alias
+alias snap='Hsnap'
+
 # set up vim
 set -o vi
 
@@ -224,4 +232,7 @@ export PATH=$HOME/bin:$PATH
 #current project aliases
 alias final='cd ~/Documents/MPCS/erlipman/final'
 alias HRDAG='cd ~/Documents/HRDAG'
+
+
+
 
