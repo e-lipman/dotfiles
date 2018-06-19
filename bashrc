@@ -220,18 +220,22 @@ function ghubc_me() {
 	ghubc e-lipman "$1"
 }
 
-# snap alias
-alias snap='Hsnap'
-
 # set up vim
 set -o vi
 
 # edit path
 export PATH=$HOME/bin:$PATH
 
+
+
 #current project aliases
-alias final='cd ~/Documents/MPCS/erlipman/final'
-alias HRDAG='cd ~/Documents/HRDAG'
+
+# SFO project on vm
+alias vmSFO='cd ~/Projects/HRDAG/SFO-pubdef'
+
+# SFO project on aer
+alias aerSFO='cd ~/Projects/SFO-pubdef'
+
 
 
 
