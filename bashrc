@@ -223,6 +223,9 @@ function ghubc_me() {
 # set up vim
 set -o vi
 
+# for plugin
+export TERM=xterm-256color
+
 # edit path
 export PATH=$HOME/anaconda3/bin:$PATH
 export PATH=$HOME/bin:$PATH

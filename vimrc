@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'w0rp/ale'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -21,6 +22,15 @@ let g:ale_linters = {
 \   'python': ['flake8'],
 \   'R': ['lintr']
 \}
+
+" lightline config
+let g:lightline = {
+\ 'colorscheme': 'landscape',
+\ }
+
+if !has('gui_running')
+  set t_Co=256
+endif
 
 " Backspace 
 set backspace=indent,eol,start 
@@ -59,6 +69,7 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+" save on entering normal mode
+
 " stuff for plugins
-
-
+inoremap <Esc> <Esc>:w<CR>
