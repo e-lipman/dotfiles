@@ -8,6 +8,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'w0rp/ale'
 Plug 'itchyny/lightline.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
@@ -31,6 +32,9 @@ let g:lightline = {
 if !has('gui_running')
   set t_Co=256
 endif
+
+" deoplete config
+let g:deoplete#enable_at_startup = 1
 
 " Backspace 
 set backspace=indent,eol,start 
