@@ -15,6 +15,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Plug 'jalvesaq/Nvim-R'
 "Plug 'gaalcaras/ncm-R'
 
+Plug 'luochen1990/rainbow'
+
 call plug#end()
 
 " sneak config
@@ -40,6 +42,9 @@ endif
 
 " deoplete config
 let g:deoplete#enable_at_startup = 1
+
+" rainbow config
+"let g:rainbow_active = 1
 
 " Backspace 
 set backspace=indent,eol,start 
