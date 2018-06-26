@@ -10,6 +10,11 @@ Plug 'w0rp/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
+" for autocomplete
+"Plug 'roxma/nvim-completion-manager'
+"Plug 'jalvesaq/Nvim-R'
+"Plug 'gaalcaras/ncm-R'
+
 call plug#end()
 
 " sneak config
