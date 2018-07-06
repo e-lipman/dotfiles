@@ -8,7 +8,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'w0rp/ale'
 Plug 'itchyny/lightline.vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " for autocomplete
 "Plug 'roxma/nvim-completion-manager'
@@ -16,6 +16,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Plug 'gaalcaras/ncm-R'
 
 Plug 'luochen1990/rainbow'
+
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -45,6 +47,16 @@ let g:deoplete#enable_at_startup = 1
 
 " rainbow config
 "let g:rainbow_active = 1
+
+" ultisnips config
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsListSnippits="<c-h>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsSnippitDirectories = ["UltiSnips"]
 
 " Backspace 
 set backspace=indent,eol,start 
