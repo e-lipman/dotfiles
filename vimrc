@@ -65,11 +65,25 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 " makes indenting smart
 set smartindent
 
+" filtype settings
+filetype plugin on
+filetype indent on
+
 " sets noexpandtab for Makefiles
 if &ft == 'make'
     setlocal noexpandtab
     setlocal tabstop=4
 endif
+
+" set filetypes for Rnw
+if has("autocmd")
+    autocmd BufRead,BufNewFile *.Rnw set ft=rnoweb
+    autocmd BufRead,BufNewFile *.rnw set ft=rnoweb
+endif
+
+" spell check
+set spelllang=en
+nnoremap <C-s> : :set spell <CR>
 
 " search highlight
 set hlsearch
@@ -84,6 +98,8 @@ if has("autocmd")
 endif
 
 " save on entering normal mode
-
-" stuff for plugins
 inoremap <Esc> <Esc>:w<CR>
+
+" newline without entering insert
+nmap <C-O> O<esc>
+nmap <CR> o<esc>
