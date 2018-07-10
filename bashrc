@@ -197,7 +197,7 @@ function srm(){
 	mv "$1" ~/Trash
 }
 
-alias rm='srm'
+# alias rm='srm'
 
 # clear ~/Trash
 alias trashc='\rm -rf ~/Trash/*'
