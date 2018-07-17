@@ -230,16 +230,26 @@ export TERM=xterm-256color
 export PATH=$HOME/anaconda3/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
+# git aliases
+alias gs='git status'
 
+function ga(){
+	git add "$@"
+}
+
+function gc(){
+    git commit -m "$1"
+}
 
 #current project aliases
 
 # SFO project on vm
 alias vmSFO='cd ~/Projects/HRDAG/SFO-pubdef'
-
-# SFO project on aer
 alias aerSFO='cd ~/Projects/SFO-pubdef'
 
+# MDH project on vm
+alias vmMDH='cd ~/Projects/HRDAG/US-MillionDH'
+alias aerMDH='cd ~/Projects/US-MillionDH'
 
 
 

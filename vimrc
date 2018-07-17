@@ -27,11 +27,11 @@ let g:sneak#streak = 1
 nmap s <Plug>SneakLabel_s
 nmap S <Plug>SneakLabel_S
 
-" ale config
-let g:ale_linters = {
-\   'python': ['flake8'],
-\   'R': ['lintr']
-\}
+"" ale config
+"let g:ale_linters = {
+"\   'python': ['flake8'],
+"\   'R': ['lintr']
+"\}
 
 " lightline config
 let g:lightline = {
