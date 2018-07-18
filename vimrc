@@ -49,14 +49,14 @@ let g:deoplete#enable_at_startup = 1
 "let g:rainbow_active = 1
 
 " ultisnips config
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsListSnippits="<c-h>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+"let g:UltiSnipsExpandTrigger="<c-j>"
+"let g:UltiSnipsListSnippits="<c-h>"
+"let g:UltiSnipsJumpForwardTrigger="<c-j>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsUsePythonVersion = 2
-let g:UltiSnipsSnippitDirectories = ["UltiSnips"]
+"let g:UltiSnipsEditSplit="vertical"
+"let g:UltiSnipsUsePythonVersion = 2
+"let g:UltiSnipsSnippitDirectories = ["UltiSnips"]
 
 " Backspace 
 set backspace=indent,eol,start 
