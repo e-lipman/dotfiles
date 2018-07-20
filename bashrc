@@ -241,7 +241,10 @@ function gc(){
     git commit -m "$1"
 }
 
-#current project aliases
+#current project aliases (specific to HRDAG project structure)
+
+# remove nvim swap files
+alias aerSWAP='rm ~/.local/share/nvim/swap/*'
 
 # SFO project on vm
 alias vmSFO='cd ~/Projects/HRDAG/SFO-pubdef'
@@ -251,6 +254,11 @@ alias aerSFO='cd ~/Projects/SFO-pubdef'
 alias vmMDH='cd ~/Projects/HRDAG/US-MillionDH'
 alias aerMDH='cd ~/Projects/US-MillionDH'
 
+# view log
+alias logv='vim output/*.log'
+
+# run and view log
+alias runvl='run && vim output/*.log'
 
 
 
