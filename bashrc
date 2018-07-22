@@ -237,6 +237,10 @@ function ga(){
 	git add "$@"
 }
 
+function gr(){
+	git rm "$@"
+}
+
 function gc(){
     git commit -m "$1"
 }
