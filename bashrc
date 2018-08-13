@@ -258,6 +258,10 @@ alias aerSFO='cd ~/Projects/SFO-pubdef'
 alias vmMDH='cd ~/Projects/HRDAG/US-MillionDH'
 alias aerMDH='cd ~/Projects/US-MillionDH'
 
+# II project on vm
+alias vmII='cd ~/Projects/HRDAG/US-II-GBV'
+alias aerII='cd ~/Projects/US-II-GBV'
+
 # view log
 alias logv='vim output/*.log'
 
