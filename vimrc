@@ -88,10 +88,11 @@ if &ft == 'make'
 endif
 
 " set filetypes for Rnw
-if has("autocmd")
-    autocmd BufRead,BufNewFile *.Rnw set ft=rnoweb
-    autocmd BufRead,BufNewFile *.rnw set ft=rnoweb
-endif
+"if has("autocmd")
+"    autocmd BufR
+"    ead,BufNewFile *.Rnw set ft=rnoweb
+"    autocmd BufRead,BufNewFile *.rnw set ft=rnoweb
+"endif
 
 " spell check
 set spelllang=en
@@ -115,3 +116,12 @@ inoremap <Esc> <Esc>:w<CR>
 " newline without entering insert
 nmap <C-O> O<esc>
 nmap <CR> o<esc>
+
+" open parallel script in same task different directory
+function VspPar(name)
+    let path_regex = '\(\/\)\(\w*\)\(\/\w*\/src\)'
+    let path = expand('%:p')
+    let path = substitute(path, path_regex, '\1NAME\3', '')
+    let path = substitute(path, "NAME", a:name, "")
+    execute "vsp ". path
+endfunction
