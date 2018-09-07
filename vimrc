@@ -119,7 +119,7 @@ nmap <CR> o<esc>
 
 " open parallel script in same task different directory
 function VspPar(name)
-    let path_regex = '\(\/\)\(\w*\)\(\/\w*\/src\)'
+    let path_regex = '\(\/\)\([A-Za-z\-\_]*\)\(\/[A-Za-z\-\_]*\/src\)'
     let path = expand('%:p')
     let path = substitute(path, path_regex, '\1NAME\3', '')
     let path = substitute(path, "NAME", a:name, "")
